@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The MT Music - Music Distribution Company</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+		}
+		
+		header {
+			background-color: #333;
+			padding: 10px;
+		}
+		
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			max-width: 960px;
+			margin: 0 auto;
+		}
+		
+		nav ul {
+			display: flex;
+			list-style: none;
+			margin: 0;
+		}
+		
+		nav li {
+			margin: 0 10px;
+		}
+		
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: bold;
+			transition: color 0.3s ease;
+		}
+		
+		nav a:hover {
+			color: #ccc;
+		}
+		
+		main {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		
+		.hero {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 500px;
+			background-image: url("https://cdn.pixabay.com/photo/2016/06/28/07/17/music-1480919_1280.jpg");
+			background-size: cover;
+			background-position: center;
+			color: #fff;
+			text-align: center;
+		}
+		
+		.hero h1 {
+			font-size: 64px;
+			margin: 0;
+		}
+		
+		.hero p {
+			font-size: 24px;
+			margin: 20px 0;
+		}
+		
+		.hero button {
+			background-color: #fff;
+			color: #333;
+			font-size: 24px;
+			font-weight: bold;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		
+		.hero button:hover {
+			background-color: #ccc;
+		}
+		
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 40px 0;
+		}
+		
+		.service {
+			flex: 1 1 300px;
+			background-color: #f2f2f2;
+			padding: 20px;
+			margin: 10px;
+			text-align: center;
+			border-radius: 5px;
+		}
+		
+		.service h3 {
+			font-size: 24px;
+			margin: 0;
+		}
+		
+		.service p {
+			font-size: 16px;
+			margin: 20px 0;
+		}
+		
+		.pricing {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 40px 0;
+		}
+		
+		.price {
+			flex: 1 1 300px;
+			background-color: #f2f2f2;
+			padding: 20px;
+			margin: 10px;
+			text-align: center;
+			border-radius: 5px;
+		}
+		
+		.price h3 {
+			font-size: 24px;
+			margin: 0;
+		}
+		
+		.price p {
+			font-size: 16px;
+			margin: 20px 0;
+		}
+		
+		.price button {
+			background-color: #333;
+			color: #fff;
+			font-size: 18px;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		
+		.price button:hover {
+			background-color: #666;
+		}
+		
+		.contact {
+			margin: 40px 0;
+		}
+		
+		.contact h2 {
+			font-size: 36px;
+			margin: 0;
+		}
+		
+		.contact form {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 20px;
+		}
+		
+		.contact label {
+			flex: 1 1 100%;
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		
+		.contact input,
+		.contact textarea {
+			flex: 1 1 100%;
+			padding: 10px;
+			font-size: 16px;
+			margin-bottom: 20px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			transition: box-shadow 0.3s ease;
+		}
+		
+		.contact input:focus,
+		.contact textarea:focus {
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		}
+		
+		.contact button {
+			background-color: #333;
+			color: #fff;
+			font-size: 18px;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		
+		.contact button:hover {
+			background-color: #666;
+		}
+		
+		.footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		.footer p {
+			margin: 0;
+		}
+		
+		@media (max-width: 767px) {
+			nav ul {
+				flex-direction: column;
+			}
+			
+			nav li {
+				margin: 10px 0;
+			}
+			
+			.hero h1 {
+				font-size: 48px;
+			}
+			
+			.hero p {
+				font-size: 18px;
+			}
+			
+			.service,
+			.price {
+				flex: 1 1 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<h1>The MT Music</h1>
+			<ul>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#pricing">Pricing</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section class="hero">
+			<h1>Music Distribution Made Easy</h1>
+			<p>Join The MT Music and distribute 			your music to all major online stores and streaming services.</p>
+			<button>Get Started</button>
+		</section>
+		
+		<section class="service" id="services">
+			<h2>Our Services</h2>
+			<p>We offer a wide range of services to help you get your music out there.</p>
+			
+			<div class="grid">
+				<div class="card">
+					<img src="https://via.placeholder.com/150" alt="Service 1">
+					<h3>Digital Distribution</h3>
+					<p>Distribute your music to all major online stores and streaming services, including Spotify, Apple Music, and more.</p>
+				</div>
+				
+				<div class="card">
+					<img src="https://via.placeholder.com/150" alt="Service 2">
+					<h3>Marketing</h3>
+					<p>We can help promote your music and get it in front of the right audience.</p>
+				</div>
+				
+				<div class="card">
+					<img src="https://via.placeholder.com/150" alt="Service 3">
+					<h3>Artist Development</h3>
+					<p>We can help you develop your music career and achieve your goals.</p>
+				</div>
+			</div>
+		</section>
+		
+		<section class="price" id="pricing">
+			<h2>Pricing</h2>
+			<p>Choose a plan that works for you.</p>
+			
+			<div class="grid">
+				<div class="card">
+					<h3>Basic</h3>
+					<p>$9.99/month</p>
+					<button>Select</button>
+				</div>
+				
+				<div class="card">
+					<h3>Pro</h3>
+					<p>$19.99/month</p>
+					<button>Select</button>
+				</div>
+				
+				<div class="card">
+					<h3>Premium</h3>
+					<p>$29.99/month</p>
+					<button>Select</button>
+				</div>
+			</div>
+		</section>
+		
+		<section class="contact" id="contact">
+			<h2>Contact Us</h2>
+			<form>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name">
+				
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email">
+				
+				<label for="message">Message</label>
+				<textarea id="message" name="message"></textarea>
+				
+				<button>Send</button>
+			</form>
+		</section>
+	</main>
+	
+	<footer class="footer">
+		<p>&copy; 2023 The MT Music. All rights reserved.</p>
+	</footer>
+</body>
+</html>
